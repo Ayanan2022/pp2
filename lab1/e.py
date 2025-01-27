@@ -31,5 +31,5 @@ example = f"The price is {899 * 4} tenge"
 print(example)
 
 #escape characters
-txt="My name is Ayana \n I am from \'Almaty \' \n I'm studing in\tKBTU"
+txt="My name is Ayana \n I am from \'Almaty \' \n I'm studing in\tKBTU" #and we another ch.
 print(txt)

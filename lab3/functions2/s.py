@@ -85,5 +85,5 @@ def answer():
         if a==i['category']:
            sum += i['imdb']
            k+=1
-    print(sum//k)
+    print(sum/k)
 answer()

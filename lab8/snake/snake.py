@@ -7,24 +7,24 @@ class Snake:
         self.direction=Vector2(1,0)
         self.new_block=False
 
-        self.head_up=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/head_up.png').convert_alpha()
-        self.head_down=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/head_down.png').convert_alpha()
-        self.head_right=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/head_right.png').convert_alpha()
-        self.head_left=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/head_left.png').convert_alpha()
+        self.head_up=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/head_up.png').convert_alpha()
+        self.head_down=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/head_down.png').convert_alpha()
+        self.head_right=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/head_right.png').convert_alpha()
+        self.head_left=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/head_left.png').convert_alpha()
 
 
-        self.tail_up=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/tail_down.png').convert_alpha()
-        self.tail_down=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/tail_up.png').convert_alpha()
-        self.tail_right=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/taik_left.png').convert_alpha()
-        self.tail_left=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/tail-right.png').convert_alpha()
+        self.tail_up=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/tail_down.png').convert_alpha()
+        self.tail_down=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/tail_up.png').convert_alpha()
+        self.tail_right=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/taik_left.png').convert_alpha()
+        self.tail_left=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/tail-right.png').convert_alpha()
 
-        self.body_vertical=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/vertical_body.png').convert_alpha()
-        self.body_horizontal=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/horizontal_body.png').convert_alpha()
+        self.body_vertical=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/vertical_body.png').convert_alpha()
+        self.body_horizontal=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/horizontal_body.png').convert_alpha()
 
-        self.body_tr=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/body_tr.png').convert_alpha()
-        self.body_tl=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/body_tl.png').convert_alpha()
-        self.body_br=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/body_br.png').convert_alpha()
-        self.body_bl=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/body_bl.png').convert_alpha()
+        self.body_tr=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/body_tr.png').convert_alpha()
+        self.body_tl=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/body_tl.png').convert_alpha()
+        self.body_br=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/body_br.png').convert_alpha()
+        self.body_bl=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/body_bl.png').convert_alpha()
 
     def draw_snake(self):
         self.update_head_graphics()
@@ -155,8 +155,8 @@ cell_size=40
 cell_number=20
 screen=pygame.display.set_mode((cell_number*cell_size,cell_number*cell_size))
 clock=pygame.time.Clock()
-apple=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/apple.png').convert_alpha()
-game_font=pygame.font.Font('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/PoetsenOne-Regular.ttf',25)
+apple=pygame.image.load('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/apple.png').convert_alpha()
+game_font=pygame.font.Font('/Users/ayananauryzbaeva/Desktop/pp2/labky/lab8/snake/PoetsenOne-Regular.ttf',25)
 
 main_game=Main()
 SCREEN_UPDATE=pygame.USEREVENT

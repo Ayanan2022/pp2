@@ -4,9 +4,9 @@ from datetime import datetime
 pygame.init()
 screen = pygame.display.set_mode((829 , 836))
 done = False
-bg_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/mickey_clock.png")
-sec_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/second_hand.png")
-min_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/minute_hand.png")
+bg_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/clock/mickey_clock.png")
+sec_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/clock/second_hand.png")
+min_image = pygame.image.load("/Users/ayananauryzbaeva/Desktop/pp2/labky/lab7/clock/minute_hand.png")
 rect = bg_image.get_rect(center=(415,418))
 
 while not done:

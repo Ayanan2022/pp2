@@ -11,6 +11,11 @@ ball_radius = 25
 ball_color = (255, 0, 0)
 ball_position = [screen_width // 2, screen_height // 2]
 
+# rect_width, rect_height = 50, 50
+# rect_color = (255, 0, 0)
+# rect_position = [screen_width // 2 - rect_width // 2, screen_height // 2 - rect_height // 2]
+
+
 clock = pygame.time.Clock()
 
 while True:

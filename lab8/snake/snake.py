@@ -124,10 +124,20 @@ class Main:
         if not 0 <= self.snake.body[0].x<cell_number or not 0 <= self.snake.body[0].y<cell_number:
             self.game_over()
 
+                # Если змея выходит за границы, она появляется с другой стороны
+        # if self.snake.body[0].x < 0:
+        #     self.snake.body[0].x = cell_number - 1
+        # elif self.snake.body[0].x >= cell_number:
+        #     self.snake.body[0].x = 0
+        # if self.snake.body[0].y < 0:
+        #     self.snake.body[0].y = cell_number - 1
+        # elif self.snake.body[0].y >= cell_number:
+        #     self.snake.body[0].y = 0
+
         for block in self.snake.body[1:]:
             if block== self.snake.body[0]:
                 self.game_over()
-
+        
     def game_over(self):
         pygame.quit()  
         sys.exit()

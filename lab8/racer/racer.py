@@ -128,6 +128,7 @@ while True:
             sys.exit()
 
     DISPLAYSURF.blit(background, (0, 0))
+    #P1.draw(D)
     scores = font_small.render(str(SCORE), True, BLACK)
     coin_scores = font_small.render(str(COIN_SCORE), True, BLACK)
     DISPLAYSURF.blit(scores, (10, 10))

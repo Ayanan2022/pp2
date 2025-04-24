@@ -4,15 +4,16 @@ import psycopg2
 def connect_to_database():
     try:
         conn = psycopg2.connect(
-            database="abab",
+            database="testdb",
             user="postgres",
             host="localhost",
-            password="pass",
+            password="1234",
             port=5432
         )
         print("Connected to the database")
         return conn
     except psycopg2.Error as e:
+        conn.rollback()
         print("Error connecting to the database:", e)
         return None
 
@@ -29,6 +30,7 @@ def insert_or_update_user(conn, full_name, phone_number):
         conn.commit()
         print("User inserted or updated successfully")
     except psycopg2.Error as e:
+        conn.rollback()
         print("Error inserting or updating user:", e)
 
 # Procedure to delete data from tables by username or phone
@@ -43,6 +45,7 @@ def delete_data(conn, pattern):
         conn.commit()
         print("Data deleted successfully")
     except psycopg2.Error as e:
+        conn.rollback()
         print("Error deleting data:", e)
 
 # Function to search for records based on a pattern
@@ -59,6 +62,7 @@ def search_records(conn, pattern):
             print(row)
         print("Search completed successfully")
     except psycopg2.Error as e:
+        conn.rollback()
         print("Error searching records:", e)
 
 # Main function
